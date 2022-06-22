@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Formulário Moderno</title>
 </head>
 
@@ -13,6 +14,7 @@
     <section>
         <div class="left-side">
             <h1>Formulário de cadastro <br> Faça parte do nosso time</h1>
+            <img src="imagens/software-integration-animate.svg" alt="imagem principal" class="imagem-principal">
         </div>
         <div class="right-side">
             <div class="registration">
@@ -30,17 +32,14 @@
                     <input type="email" name="confirmar-email" placeholder="Confirme seu Email" required>
                 </div>
                 <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="senha" name="senha" placeholder="Digite sua senha" required>
-                </div>
-                <div class="textfield">
-                    <label for="confirmar-senha">Confirmar Senha</label>
-                    <input type="senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" autocomplete="off" maxlength="14" onkeyup="masc_cpf()">
                 </div>
                 <button class="btn">Cadastrar</button>
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
